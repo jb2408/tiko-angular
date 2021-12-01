@@ -1,12 +1,45 @@
-@import 'colors.scss';
+@import './colors';
+@import './mixins';
+@import './typography';
+@import './buttons';
+@import './dialogs';
 
 $multiplier: 4px;
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: $white;
+  background-color: $white;
+  font-family: map-get($project-theme, font-type);
+  letter-spacing: 0.25px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $light-grey #f6f6f6;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #f6f6f6;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $light-grey;
+  border-radius: 10px;
+  border: 3px solid $light-grey;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,51 @@
+// PADDINGS
+
+@mixin pad($n: 4) {
+  padding: $n * $multiplier;
+}
+
+@mixin pad-top($n: 4) {
+  padding-top: $n * $multiplier;
+}
+
+@mixin pad-right($n: 4) {
+  padding-right: $n * $multiplier;
+}
+
+@mixin pad-bottom($n: 4) {
+  padding-bottom: $n * $multiplier;
+}
+
+@mixin pad-left($n: 4) {
+  padding-left: $n * $multiplier;
+}
+
+@mixin pad-all($a: 4, $b: 4, $c: 4, $d: 4) {
+  padding: $a * $multiplier $b * $multiplier $c * $multiplier $d * $multiplier;
+}
+
+// MARGINS
+
+@mixin margin($n: 4) {
+  margin: $n * $multiplier;
+}
+
+@mixin margin-top($n: 4) {
+  margin-top: $n * $multiplier;
+}
+
+@mixin margin-right($n: 4) {
+  margin-right: $n * $multiplier;
+}
+
+@mixin margin-bottom($n: 4) {
+  margin-bottom: $n * $multiplier;
+}
+
+@mixin margin-left($n: 4) {
+  margin-left: $n * $multiplier;
+}
+
+@mixin margin-all($a: 4, $b: 4, $c: 4, $d: 4) {
+  margin: $a * $multiplier $b * $multiplier $c * $multiplier $d * $multiplier;
+}

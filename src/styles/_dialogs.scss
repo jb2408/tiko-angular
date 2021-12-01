@@ -1,0 +1,92 @@
+::ng-deep mat-dialog-container .custom-dialog {
+  min-width: 200px;
+}
+
+.custom-dialog {
+  .title-container {
+    position: relative;
+    @include margin-bottom(4);
+
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  .dialog-content {
+    min-height: 60px;
+    text-align: center;
+    @include margin-bottom(3);
+    .input-container {
+      width: 100%;
+      @include margin-top(3);
+      .mat-form-field-wrapper {
+        width: 100%;
+      }
+      ::ng-deep .mat-form-field-infix {
+        width: 100%;
+        border: 1px solid $dark-grey;
+        box-sizing: border-box;
+        border-radius: 4px;
+        @include pad(2);
+        height: 48px;
+      }
+      ::ng-deep .mat-form-field-underline {
+        display: none;
+      }
+      input {
+        border: none;
+        outline: none;
+        width: calc(100% - 50px);
+        @include m-font();
+        color: $dark-grey;
+        height: 30px;
+      }
+      .mat-select,
+      ::ng-deep .mat-select-value,
+      ::ng-deep .mat-select-arrow,
+      .mat-select-value-text,
+      ::ng-deep .mat-option.mat-active {
+        vertical-align: -webkit-baseline-middle;
+        @include m-font();
+        color: $dark-grey;
+      }
+      .right-align-icon {
+        color: $dark-grey;
+        height: 30px;
+        vertical-align: middle;
+        @include margin-left(2);
+      }
+    }
+    .red-border {
+      ::ng-deep .mat-form-field-infix {
+        border: 2px solid $error;
+      }
+    }
+    .reuse-checkbox {
+      @include margin-bottom(4);
+      text-align: left;
+    }
+    .dialog-question {
+      font-weight: 500;
+      color: $black;
+      @include margin-all(0, 3, 0, 3);
+    }
+    .dialog-text {
+      @include m-font();
+      color: $dark-grey;
+      @include margin-all(0, 3, 0, 3);
+      max-width: 400px;
+      text-align: left;
+    }
+  }
+}
+
+.select-option {
+  color: $dark-grey !important;
+}

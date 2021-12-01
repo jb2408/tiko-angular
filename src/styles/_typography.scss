@@ -1,0 +1,50 @@
+.font-xs {
+  font-size: $font-xs;
+  line-height: 16px;
+}
+
+.font-s {
+  font-size: $font-s;
+  line-height: 16px;
+}
+
+.font-m {
+  font-size: $font-m;
+  line-height: 24px;
+}
+
+.font-l {
+  font-size: $font-l;
+  line-height: 32px;
+}
+
+.font-xl {
+  font-size: $font-xl;
+  line-height: 40px;
+}
+
+.font-xxl {
+  font-size: $font-xxl;
+  line-height: 48px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-uppercase {
+  text-transform: uppercase;
+}
+
+.font-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}

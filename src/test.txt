@@ -1,0 +1,32 @@
+goToSendTaskData(taskName: string, taskId: number): void {
+    const dialogRef = this.dialog.open(SendEditTaskDialogComponent, {
+      maxWidth: '90vw',
+      data: {
+        id: taskId,
+        dialogType: DialogType.Send,
+        taskName: taskName,
+        confirmationButton: 'Send Task',
+      },
+    });
+
+    dialogRef.componentInstance.reloadData.subscribe((reloadTable: boolean) => {
+      if (reloadTable) {
+        this._featureFacade.loadAllTasks();
+        this._featureFacade.loadPlannedTasks();
+        this._featureFacade.loadPerformedTasks();
+      }
+
+      if (dialogRef.componentInstance.reloadData)
+        dialogRef.componentInstance.reloadData.unsubscribe();
+    });
+  }
+
+
+
+
+
+
+
+import { MatDialog } from '@angular/material/dialog';
+
+public dialog: MatDialog
