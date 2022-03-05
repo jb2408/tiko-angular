@@ -1,7 +1,8 @@
-@import './variables';
-@import './mixins';
-@import './typography';
-@import './dialogs';
+@use './variables';
+@use './mixins';
+@use './typography';
+@use './dialogs';
+@use './buttons';
 
 * {
   margin: 0;
