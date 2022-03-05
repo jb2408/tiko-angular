@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { WelcomePopupComponent } from './features/welcome-popup/welcome-popup.component';
-import { MatDialogModule } from '@angular/material/dialog';
+import { FeaturesModule } from './features/features/features.module';
+import { SharedModule } from './shared/shared/shared.module';
+import { AllMaterialsModuleModule } from './material/all-materials-module/all-materials-module.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { MatDialogModule } from '@angular/material/dialog';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FlexLayoutModule,
-    MatDialogModule
+    FeaturesModule,
+    SharedModule,
+    AllMaterialsModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
