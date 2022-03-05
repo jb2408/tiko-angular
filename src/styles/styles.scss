@@ -1,10 +1,7 @@
 @import './variables';
 @import './mixins';
 @import './typography';
-@import './buttons';
 @import './dialogs';
-
-$multiplier: 4px;
 
 * {
   margin: 0;
@@ -13,7 +10,7 @@ $multiplier: 4px;
 
 body {
   background-color: $white;
-  font-family: map-get($project-theme, font-type);
+  font-family: Dosis;
   letter-spacing: 0.25px;
 }
 
