@@ -1,4 +1,4 @@
-@use './variables.scss';
+@import './variables.scss';
 
 // PADDINGS
 
@@ -25,6 +25,9 @@
 @mixin pad-all($a: 4, $b: 4, $c: 4, $d: 4) {
   padding: $a * $multiplier $b * $multiplier $c * $multiplier $d * $multiplier;
 }
+@mixin pad-2($a: 4, $b: 4) {
+  padding: $a * $multiplier $b * $multiplier;
+}
 
 // MARGINS
 
@@ -50,4 +53,7 @@
 
 @mixin margin-all($a: 4, $b: 4, $c: 4, $d: 4) {
   margin: $a * $multiplier $b * $multiplier $c * $multiplier $d * $multiplier;
+}
+@mixin margin-2($a: 4, $b: 4) {
+  margin: $a * $multiplier $b * $multiplier;
 }

@@ -1,1 +1,27 @@
-@use './variables';
+@import './variables';
+
+.btn {
+    min-width: 180px;
+    font-size: $font-m;
+    line-height: 24px;
+    text-transform: uppercase;
+    @include pad-2(1, 4);
+    border-radius: $multiplier;
+    cursor: pointer;
+}
+.btn:disabled {
+    cursor: not-allowed;
+    border: 1px solid $primary;
+    background-color: $light-grey;
+    color: $primary;
+}
+.primary-btn {
+    background-color: $primary;
+    color: $white;
+    border-color: transparent;
+}
+.secondary-btn {
+    background-color: $white;
+    color: $primary;
+    border-color: $primary;
+}

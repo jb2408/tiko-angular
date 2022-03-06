@@ -1,0 +1,6 @@
+<div class="welcome-container" fxLayout="column" fxLayoutGap="32px" fxLayoutAlign="space-between center" >
+    <h1 class="text-center">Welcome to Tiko's page! </h1>
+    <h2>How should we call you?</h2>
+    <input matInput placeholder="Write your name" [(ngModel)]="userName">
+    <button class="btn primary-btn" [disabled]="userName===''" (click)="saveUserName()">Submit</button>
+</div>

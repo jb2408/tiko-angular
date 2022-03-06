@@ -48,3 +48,16 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+h1 {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 43px;
+  color: $black;
+}
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: $secondary;
+}

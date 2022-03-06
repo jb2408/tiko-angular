@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WelcomePopupComponent } from './features/welcome-popup/welcome-popup.component';
+import { WelcomePopupComponent } from './features/features/welcome-popup/welcome-popup.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -19,8 +19,9 @@ export class AppComponent implements OnInit {
   openWelcomePopup() {
     const dialogRef = this.dialog.open(WelcomePopupComponent, {
       maxWidth: '90vw',
+      disableClose: true,
       data: {
-        
+        hello: "jezu."
       },
     });
   }
