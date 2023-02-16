@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  isUserKnow: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
