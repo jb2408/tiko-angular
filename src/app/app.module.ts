@@ -10,7 +10,7 @@ import { AllMaterialsModuleModule } from './material/all-materials-module/all-ma
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { TestpageComponent } from './pages/testpage/testpage.component';
 import { MainHeaderComponent } from './shared/main-header/main-header.component';

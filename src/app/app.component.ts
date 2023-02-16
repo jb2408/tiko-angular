@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WelcomePopupComponent } from './features/features/welcome-popup/welcome-popup.component';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 
 @Component({
   selector: 'app-root',
